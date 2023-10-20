@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/*-------------------------------------------------- General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    margin: auto;
+    background-color: rgb(34, 34, 34);
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+main{
+    margin: auto;
+    padding-top: 2rem;
+    border-radius: 1rem;;
+}
+
+
+header{
+    background-color: rgb(230, 230, 230);
+    padding: 1rem 0 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+h1{
+    text-decoration: underline black;
+    font-size: 1rem;
+}
+
+h2, h3{
+    color:whitesmoke;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+h3{
+    margin-top: 2rem ;
+    font-size: 2rem;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+}
+
+button{
+    font-size: 1.2rem;
+    padding:0.5rem;
+    width: 15rem;
+    margin:0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    background-color: rgb(208, 84, 56);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+button::after{
+    content:" 🎶";
+}
+
+#info{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 8rem;
+}
+
+#cantidad-discos{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contenedor-discos{
+display: flex;
+flex-direction: column;
+width: 24rem;
+height: fit-content;
+background-color:rgba(189, 77, 52, 0.856); 
+color:rgb(0, 0, 0);
+text-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+border-radius: 0.5rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-discos > p {
+    font-weight: 900;
+    font-size: 6rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    color:whitesmoke;
+}
+
+.disco-artista {
+    color:whitesmoke;
+    text-align: center;
+}
+
+.disco-artista p:first-child{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.disco-artista p:last-child{
+    font-weight: 500;
+    margin-bottom:0.5rem;
+}
+
+
+
+.contenedor-discos ul{
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    padding:1rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius:0.5rem;
+}
+
+.contenedor-discos ul li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin:1rem 0;
+    color:rgb(20, 20, 20);
+    
+}
+
+.contenedor-discos ul li p{
+    font-weight: 900;
+}
+
+.contenedor-discos ol li{
+list-style:decimal inside;
+}
+
+.red{
+    color: rgb(235, 8, 8);
+    text-decoration: underline;
+    padding: 0.2rem;
+    border-radius: 7px;
+}
+
+.green{
+    color: rgb(20, 148, 20);
+    text-decoration: underline;
+    padding: 0.2rem;
+    border-radius: 7px;
+}
+
+
+footer{
+    background-color: rgb(230, 230, 230);
+    bottom:0;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+footer li{
+    list-style: none;
+    font-weight: 00;
+}
+@media screen and (min-width: 960px) {
+
+
+    h1{
+        font-size: 2rem;
+    }
+
+    main{
+        width: 1366px;
+    }
+
+   .contenedor-botones{
+    flex-direction: row;
+   }
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap:1rem;
+    }
+}
